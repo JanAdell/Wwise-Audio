@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3F99A860-AC29-477E-A62F-67440F979384}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="General" ID="{3F99A860-AC29-477E-A62F-67440F979384}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Surface_Type" ID="{79AB14A4-8CFC-4171-B680-DB132AE53B3A}">
+					<ChildrenList>
+						<Switch Name="Evil_Crawler" ID="{9E769E41-1F45-4DE9-B6C6-8426E00CCF40}"/>
+						<Switch Name="Evil_Head" ID="{5006A7F5-1D0F-4E79-BD7C-8DEBD4EEB8EA}"/>
+						<Switch Name="Evil_SpitPlant" ID="{4B75933B-08F0-47B9-B2B0-EBB03FE691B9}"/>
+						<Switch Name="Crate" ID="{174DC4EB-4233-48EF-9100-CE9EB186160C}"/>
+						<Switch Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}"/>
+						<Switch Name="Grass" ID="{56B72CFB-AED8-42DD-9607-AD4807DBE6AA}"/>
+						<Switch Name="Leaves" ID="{8E35FB34-435E-48F8-B9D5-F6AD65502952}"/>
+						<Switch Name="Stone" ID="{1226965D-F22E-4867-9E70-066A5EDC3DC5}"/>
+						<Switch Name="Wood" ID="{6162C3B5-9C24-4648-B3C3-6500BFD194AD}"/>
+						<Switch Name="Barrel" ID="{F0ACD9E7-41D7-43BE-BC7D-EBBEE983DCBE}"/>
+						<Switch Name="Rock" ID="{2404E880-6626-472F-9E21-1160F8E96901}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
