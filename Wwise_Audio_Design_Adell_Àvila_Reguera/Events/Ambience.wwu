@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{078138EC-C3A2-431E-ABF0-36615F42DF17}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Ambience" ID="{078138EC-C3A2-431E-ABF0-36615F42DF17}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Ambient_Windmill" ID="{1763BF2B-6C80-4FB2-BFA1-EB85B18A61B2}"/>
+				<Event Name="Ambient_Fire_Campfire" ID="{C939F38A-4D91-45A5-8153-9682CDD29417}"/>
+				<Event Name="Ambient_Water_River" ID="{E7E6B721-A7CE-42AB-94B0-793C134D8A40}"/>
+				<Event Name="Ambient_Lava" ID="{750444CA-80F8-4645-99BC-E16794203331}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

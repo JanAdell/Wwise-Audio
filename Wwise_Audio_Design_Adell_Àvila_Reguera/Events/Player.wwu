@@ -3,7 +3,9 @@
 	<Events>
 		<WorkUnit Name="Player" ID="{B7FD1B1E-B773-4CFF-9136-D8817368D94F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="New_Event" ID="{E8FF213D-13B4-40EC-BA29-59C13505715C}"/>
+				<Event Name="WeaponImpact" ID="{E8FF213D-13B4-40EC-BA29-59C13505715C}"/>
+				<Event Name="Player_WeaponSwing" ID="{2AE4B372-ACFF-4465-BABB-8E2259F8359E}"/>
+				<Event Name="Player_Health" ID="{875D00C1-176A-4A33-9A9D-9C55FFB85481}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
