@@ -4124,8 +4124,14 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
 										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="None" ID="{471D9D5C-60CB-44F6-93A6-21AA54CC2B72}" WorkUnitID="{70D83C09-04B4-4928-BFC1-E2D7ED7225AB}"/>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Combo" ID="{D9503756-FABC-4F85-A33C-9F0ED0AC8EE4}" WorkUnitID="{70D83C09-04B4-4928-BFC1-E2D7ED7225AB}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -4159,6 +4165,26 @@
 												<ItemRef Name="Swing_Weapon_LeftRight" ID="{D570B3D0-5F38-490E-BDA1-93E5357C889E}"/>
 											</GroupingBehavior>
 										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="RightSwing" ID="{2849A669-879A-4171-8A84-9AF6A0A4A201}"/>
+												<ItemList>
+													<ItemRef Name="Swing_Weapon_LeftRight" ID="{D570B3D0-5F38-490E-BDA1-93E5357C889E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="LeftSwing" ID="{71793392-08ED-4FAE-B129-7EEB11414645}"/>
+												<ItemList>
+													<ItemRef Name="Swing_Weapon_LeftRight" ID="{D570B3D0-5F38-490E-BDA1-93E5357C889E}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="TopSwing" ID="{108D1CB6-6648-4975-ACF2-0389FD8B0719}"/>
+												<ItemList>
+													<ItemRef Name="Swing_Weapon_Top" ID="{B3D1275F-B045-4B0F-AE83-2F19B4E09F28}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
 									</GroupingInfo>
 								</SwitchContainer>
 							</ChildrenList>

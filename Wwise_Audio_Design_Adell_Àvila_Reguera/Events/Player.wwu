@@ -3,8 +3,35 @@
 	<Events>
 		<WorkUnit Name="Player" ID="{B7FD1B1E-B773-4CFF-9136-D8817368D94F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="WeaponImpact" ID="{E8FF213D-13B4-40EC-BA29-59C13505715C}"/>
-				<Event Name="Player_WeaponSwing" ID="{2AE4B372-ACFF-4465-BABB-8E2259F8359E}"/>
+				<Event Name="WeaponImpact" ID="{E8FF213D-13B4-40EC-BA29-59C13505715C}">
+					<ChildrenList>
+						<Action Name="" ID="{69E0FA3E-EE45-4052-8A85-9DC47BD5CF43}" ShortID="404011989">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Impact_Weapon_Type" ID="{CFCB7107-23B5-4708-AC17-C51A68804926}" WorkUnitID="{359405A8-CDE7-41CA-97B4-919D2E0D7F43}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Player_WeaponSwing" ID="{2AE4B372-ACFF-4465-BABB-8E2259F8359E}">
+					<ChildrenList>
+						<Action Name="" ID="{5389E62B-B268-4D4F-AA97-A5010448B67A}" ShortID="892449885">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swing_Weapon_Type" ID="{479F4A83-9234-4158-A977-9AB221B9EE65}" WorkUnitID="{359405A8-CDE7-41CA-97B4-919D2E0D7F43}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2EEA6310-42A6-4E55-8ADF-0711B206B8C8}" ShortID="193835765">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Swing_Weapon_Dialogue" ID="{7F3356B2-F3F2-4E4D-94BB-D1E44A3D8CFD}" WorkUnitID="{359405A8-CDE7-41CA-97B4-919D2E0D7F43}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="Player_Health" ID="{875D00C1-176A-4A33-9A9D-9C55FFB85481}"/>
 			</ChildrenList>
 		</WorkUnit>
