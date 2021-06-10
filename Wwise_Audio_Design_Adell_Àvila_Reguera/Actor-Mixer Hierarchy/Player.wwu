@@ -1,6 +1,1294 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{359405A8-CDE7-41CA-97B4-919D2E0D7F43}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Player" ID="{359405A8-CDE7-41CA-97B4-919D2E0D7F43}" PersistMode="Standalone"/>
+		<WorkUnit Name="Player" ID="{359405A8-CDE7-41CA-97B4-919D2E0D7F43}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Player" ID="{7DAF4BDC-3D06-491C-8D95-BD23AD276211}" ShortID="383312860">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Melee" ID="{CF2B7D70-6EDF-45C4-B803-12E8774DF649}" ShortID="5878180">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Impact_Weapon_Type" ID="{CFCB7107-23B5-4708-AC17-C51A68804926}" ShortID="334419922">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Sword" ID="{AB792A14-0E8D-4C21-9C57-1C93F4CE3118}" WorkUnitID="{466A8CAE-BABB-419E-902A-38AD6841402C}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Player_Weapon_Type" ID="{4F932E9F-9403-4122-9D20-967260EB38D9}" WorkUnitID="{466A8CAE-BABB-419E-902A-38AD6841402C}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<SwitchContainer Name="Impact_Axe_Surface_Type" ID="{911CF22B-4DFF-4AEB-9C03-443671088B11}" ShortID="308828236">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Surface_Type" ID="{79AB14A4-8CFC-4171-B680-DB132AE53B3A}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Impact_Axe_Barrel" ID="{8C918556-AD33-4245-9400-03AF8AD55DEA}" ShortID="807457147">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_Crate" ID="{11088E73-119B-41CA-A941-8100DF073E67}" ShortID="220855337">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_Dirt" ID="{30A823A0-392C-4647-9E90-0E5D2969D5EE}" ShortID="31130143">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_EvilCrawler" ID="{2C4B519E-C4EB-444F-B389-31B1C1167297}" ShortID="476870946">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_EvilHead" ID="{BB129954-018E-4BEA-8C39-65130109EB37}" ShortID="638205385">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_EvilSpitPlant" ID="{EE86D349-B3BF-4BAD-BDE5-27D81DA142BB}" ShortID="116208383">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_Grass" ID="{71A76D6B-E43C-4929-B17B-6E92454A30FB}" ShortID="1044597817">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_Leaves" ID="{94A1FF16-7636-4F9B-AD9B-3E016E5DF482}" ShortID="509339134">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Axe_Stone" ID="{AEDCC0AB-C00A-46DF-8B2C-613C749163E5}" ShortID="624163960">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="Impact_Axe_Rock" ID="{630E0510-4D03-4BF3-9424-4F1112F520FB}" ShortID="248802224">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+													<GroupingInfo/>
+												</SwitchContainer>
+												<RandomSequenceContainer Name="Impact_Axe_Wood" ID="{5478A875-2274-4D36-A79F-4FBBC533E98A}" ShortID="687799999">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Rock" ID="{630E0510-4D03-4BF3-9424-4F1112F520FB}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Leaves" ID="{94A1FF16-7636-4F9B-AD9B-3E016E5DF482}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_EvilSpitPlant" ID="{EE86D349-B3BF-4BAD-BDE5-27D81DA142BB}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_EvilHead" ID="{BB129954-018E-4BEA-8C39-65130109EB37}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Barrel" ID="{8C918556-AD33-4245-9400-03AF8AD55DEA}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Grass" ID="{71A76D6B-E43C-4929-B17B-6E92454A30FB}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Crate" ID="{11088E73-119B-41CA-A941-8100DF073E67}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Wood" ID="{5478A875-2274-4D36-A79F-4FBBC533E98A}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_EvilCrawler" ID="{2C4B519E-C4EB-444F-B389-31B1C1167297}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Dirt" ID="{30A823A0-392C-4647-9E90-0E5D2969D5EE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Axe_Stone" ID="{AEDCC0AB-C00A-46DF-8B2C-613C749163E5}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Leaves" ID="{8E35FB34-435E-48F8-B9D5-F6AD65502952}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Leaves" ID="{94A1FF16-7636-4F9B-AD9B-3E016E5DF482}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_SpitPlant" ID="{4B75933B-08F0-47B9-B2B0-EBB03FE691B9}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_EvilSpitPlant" ID="{EE86D349-B3BF-4BAD-BDE5-27D81DA142BB}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Crawler" ID="{9E769E41-1F45-4DE9-B6C6-8426E00CCF40}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_EvilCrawler" ID="{2C4B519E-C4EB-444F-B389-31B1C1167297}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Stone" ID="{1226965D-F22E-4867-9E70-066A5EDC3DC5}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Stone" ID="{AEDCC0AB-C00A-46DF-8B2C-613C749163E5}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Rock" ID="{2404E880-6626-472F-9E21-1160F8E96901}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Rock" ID="{630E0510-4D03-4BF3-9424-4F1112F520FB}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Dirt" ID="{30A823A0-392C-4647-9E90-0E5D2969D5EE}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{6162C3B5-9C24-4648-B3C3-6500BFD194AD}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Wood" ID="{5478A875-2274-4D36-A79F-4FBBC533E98A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Barrel" ID="{F0ACD9E7-41D7-43BE-BC7D-EBBEE983DCBE}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Barrel" ID="{8C918556-AD33-4245-9400-03AF8AD55DEA}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Crate" ID="{174DC4EB-4233-48EF-9100-CE9EB186160C}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Crate" ID="{11088E73-119B-41CA-A941-8100DF073E67}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Head" ID="{5006A7F5-1D0F-4E79-BD7C-8DEBD4EEB8EA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_EvilHead" ID="{BB129954-018E-4BEA-8C39-65130109EB37}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{56B72CFB-AED8-42DD-9607-AD4807DBE6AA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Axe_Grass" ID="{71A76D6B-E43C-4929-B17B-6E92454A30FB}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Impact_Dagger_Surface_Type" ID="{29E5C276-E538-4FB9-8A8A-85AB77A5EB51}" ShortID="744996704">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Surface_Type" ID="{79AB14A4-8CFC-4171-B680-DB132AE53B3A}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Impact_Dagger_Barrel" ID="{59AF5149-B0B6-4B88-B513-36F0746ACF17}" ShortID="761321167">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_Stone" ID="{F9BDAED3-C7F7-4578-A2E5-D3425F767150}" ShortID="763419941">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="Impact_Dagger_Rock" ID="{D4F0ABE7-9EA2-4CC4-B4CE-7946BB9828FD}" ShortID="401540094">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+													<GroupingInfo/>
+												</SwitchContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_Dirt" ID="{CCC71383-FCD7-45CF-884B-FB2045FB9170}" ShortID="157481823">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_EvilHead" ID="{395CDFD9-F76B-400D-9A23-DB617C92A37A}" ShortID="940884270">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_Grass" ID="{413E5290-F506-4C83-ABA1-03FB1E7EFEA9}" ShortID="311366560">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_Crate" ID="{5BA2185B-EF1A-43A8-B831-250DAE438398}" ShortID="542268819">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_EvilCrawler" ID="{56AC2275-83BD-4819-82F0-94A2CF243CBF}" ShortID="904771428">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_EvilSpitPlant" ID="{C5AE20E4-AB22-48D1-9CC4-9F0DA6A5F63E}" ShortID="813115721">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_Leaves" ID="{8E86A322-418F-40C6-B96B-A10DC2CE1AFC}" ShortID="339969162">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Dagger_Wood" ID="{89595558-A955-4601-ADB0-069B05D4583E}" ShortID="999455905">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Leaves" ID="{8E86A322-418F-40C6-B96B-A10DC2CE1AFC}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Barrel" ID="{59AF5149-B0B6-4B88-B513-36F0746ACF17}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Wood" ID="{89595558-A955-4601-ADB0-069B05D4583E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Crate" ID="{5BA2185B-EF1A-43A8-B831-250DAE438398}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_EvilCrawler" ID="{56AC2275-83BD-4819-82F0-94A2CF243CBF}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Dirt" ID="{CCC71383-FCD7-45CF-884B-FB2045FB9170}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Grass" ID="{413E5290-F506-4C83-ABA1-03FB1E7EFEA9}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Stone" ID="{F9BDAED3-C7F7-4578-A2E5-D3425F767150}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_EvilHead" ID="{395CDFD9-F76B-400D-9A23-DB617C92A37A}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_EvilSpitPlant" ID="{C5AE20E4-AB22-48D1-9CC4-9F0DA6A5F63E}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Dagger_Rock" ID="{D4F0ABE7-9EA2-4CC4-B4CE-7946BB9828FD}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Leaves" ID="{8E35FB34-435E-48F8-B9D5-F6AD65502952}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Leaves" ID="{8E86A322-418F-40C6-B96B-A10DC2CE1AFC}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_SpitPlant" ID="{4B75933B-08F0-47B9-B2B0-EBB03FE691B9}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_EvilSpitPlant" ID="{C5AE20E4-AB22-48D1-9CC4-9F0DA6A5F63E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Crawler" ID="{9E769E41-1F45-4DE9-B6C6-8426E00CCF40}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_EvilCrawler" ID="{56AC2275-83BD-4819-82F0-94A2CF243CBF}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Stone" ID="{1226965D-F22E-4867-9E70-066A5EDC3DC5}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Stone" ID="{F9BDAED3-C7F7-4578-A2E5-D3425F767150}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Rock" ID="{2404E880-6626-472F-9E21-1160F8E96901}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Rock" ID="{D4F0ABE7-9EA2-4CC4-B4CE-7946BB9828FD}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Dirt" ID="{CCC71383-FCD7-45CF-884B-FB2045FB9170}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{6162C3B5-9C24-4648-B3C3-6500BFD194AD}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Wood" ID="{89595558-A955-4601-ADB0-069B05D4583E}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Barrel" ID="{F0ACD9E7-41D7-43BE-BC7D-EBBEE983DCBE}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Barrel" ID="{59AF5149-B0B6-4B88-B513-36F0746ACF17}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Crate" ID="{174DC4EB-4233-48EF-9100-CE9EB186160C}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Crate" ID="{5BA2185B-EF1A-43A8-B831-250DAE438398}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Head" ID="{5006A7F5-1D0F-4E79-BD7C-8DEBD4EEB8EA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_EvilHead" ID="{395CDFD9-F76B-400D-9A23-DB617C92A37A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{56B72CFB-AED8-42DD-9607-AD4807DBE6AA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Dagger_Grass" ID="{413E5290-F506-4C83-ABA1-03FB1E7EFEA9}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Impact_Hammer_Surface_Type" ID="{9358E2A3-863E-45A6-823C-893B78EB2695}" ShortID="1073620180">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Surface_Type" ID="{79AB14A4-8CFC-4171-B680-DB132AE53B3A}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Impact_Hammer_Stone" ID="{A3867659-8787-4444-9DC9-0275053DF628}" ShortID="372853699">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="Impact_Hammer_Rock" ID="{C1629A0D-F382-485C-A8A0-015FE6169160}" ShortID="749311108">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+													<GroupingInfo/>
+												</SwitchContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_Barrel" ID="{74392F19-72E3-4D28-B34F-7E982FE4F010}" ShortID="1043801649">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_Dirt" ID="{1F3D409E-8F15-455A-A76B-55EDC9FD3762}" ShortID="626354105">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_EvilHead" ID="{233AAD2C-4A3F-4467-AF2B-F50850B64F2D}" ShortID="983655526">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_Grass" ID="{189EE8E6-D4E2-4F7E-8D03-5DA9B670C69F}" ShortID="357488823">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_Crate" ID="{B74F6F7D-5D2D-43E2-AF61-372D250644F7}" ShortID="892692452">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_EvilCrawler" ID="{7C092DF9-CAE5-489C-A264-433114D77852}" ShortID="846758986">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_EvilSpitPlant" ID="{B26ADE90-32A9-4B8D-865A-B1D1BB22C7A9}" ShortID="471905461">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_Leaves" ID="{BD1D5136-18BE-49FD-8740-11BD7F705783}" ShortID="57775457">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Hammer_Wood" ID="{685B5722-CB85-4BD7-8FA9-FA43A73B0977}" ShortID="132906049">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Rock" ID="{C1629A0D-F382-485C-A8A0-015FE6169160}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Barrel" ID="{74392F19-72E3-4D28-B34F-7E982FE4F010}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Wood" ID="{685B5722-CB85-4BD7-8FA9-FA43A73B0977}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_EvilHead" ID="{233AAD2C-4A3F-4467-AF2B-F50850B64F2D}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Leaves" ID="{BD1D5136-18BE-49FD-8740-11BD7F705783}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Stone" ID="{A3867659-8787-4444-9DC9-0275053DF628}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Crate" ID="{B74F6F7D-5D2D-43E2-AF61-372D250644F7}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_EvilSpitPlant" ID="{B26ADE90-32A9-4B8D-865A-B1D1BB22C7A9}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Dirt" ID="{1F3D409E-8F15-455A-A76B-55EDC9FD3762}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_Grass" ID="{189EE8E6-D4E2-4F7E-8D03-5DA9B670C69F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Hammer_EvilCrawler" ID="{7C092DF9-CAE5-489C-A264-433114D77852}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Leaves" ID="{8E35FB34-435E-48F8-B9D5-F6AD65502952}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Leaves" ID="{BD1D5136-18BE-49FD-8740-11BD7F705783}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_SpitPlant" ID="{4B75933B-08F0-47B9-B2B0-EBB03FE691B9}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_EvilSpitPlant" ID="{B26ADE90-32A9-4B8D-865A-B1D1BB22C7A9}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Crawler" ID="{9E769E41-1F45-4DE9-B6C6-8426E00CCF40}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_EvilCrawler" ID="{7C092DF9-CAE5-489C-A264-433114D77852}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Stone" ID="{1226965D-F22E-4867-9E70-066A5EDC3DC5}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Stone" ID="{A3867659-8787-4444-9DC9-0275053DF628}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Rock" ID="{2404E880-6626-472F-9E21-1160F8E96901}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Rock" ID="{C1629A0D-F382-485C-A8A0-015FE6169160}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Dirt" ID="{1F3D409E-8F15-455A-A76B-55EDC9FD3762}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{6162C3B5-9C24-4648-B3C3-6500BFD194AD}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Wood" ID="{685B5722-CB85-4BD7-8FA9-FA43A73B0977}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Barrel" ID="{F0ACD9E7-41D7-43BE-BC7D-EBBEE983DCBE}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Barrel" ID="{74392F19-72E3-4D28-B34F-7E982FE4F010}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Crate" ID="{174DC4EB-4233-48EF-9100-CE9EB186160C}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Crate" ID="{B74F6F7D-5D2D-43E2-AF61-372D250644F7}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Head" ID="{5006A7F5-1D0F-4E79-BD7C-8DEBD4EEB8EA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_EvilHead" ID="{233AAD2C-4A3F-4467-AF2B-F50850B64F2D}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{56B72CFB-AED8-42DD-9607-AD4807DBE6AA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Hammer_Grass" ID="{189EE8E6-D4E2-4F7E-8D03-5DA9B670C69F}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Impact_Pickaxe_Surface_Type" ID="{E7440DA9-EC9F-431D-A3AA-B8CBF93DD77A}" ShortID="194867397">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Surface_Type" ID="{79AB14A4-8CFC-4171-B680-DB132AE53B3A}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Stone" ID="{D2A3456D-8E7D-4AEB-80C3-B2A6E501E299}" ShortID="947831227">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="Impact_Pickaxe_Rock" ID="{B66D8734-DBD4-4C96-96EC-6AA0403BD4D9}" ShortID="14136655">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+													<GroupingInfo/>
+												</SwitchContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Barrel" ID="{AE5C53C2-CFB6-4E6A-95E5-251EA71A6D2C}" ShortID="212156039">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Dirt" ID="{3D4D372E-8DFB-455E-8877-A0D5BCAF1A49}" ShortID="740960444">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_EvilHead" ID="{BFC0C6EA-CFC9-4959-B8D4-0A39704C365D}" ShortID="371441004">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Grass" ID="{31F6CCCB-2CBD-482A-806C-14AE43B62EFF}" ShortID="749122439">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Crate" ID="{159028AB-63A5-47CC-9085-6D40219022C6}" ShortID="800776518">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_EvilCrawler" ID="{EF0EB965-9767-43A1-8A92-FD7B512AED7C}" ShortID="156155678">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_EvilSpitPlant" ID="{6BBC6733-D08A-472B-9C02-3B8D9672A68C}" ShortID="1072819368">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Leaves" ID="{13EFEE2A-486C-4E2E-A160-26076A53FF9A}" ShortID="932550072">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Pickaxe_Wood" ID="{2139F81B-A8BC-49AF-AFE2-7BF423BCA7F4}" ShortID="256713616">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Wood" ID="{2139F81B-A8BC-49AF-AFE2-7BF423BCA7F4}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Leaves" ID="{13EFEE2A-486C-4E2E-A160-26076A53FF9A}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Dirt" ID="{3D4D372E-8DFB-455E-8877-A0D5BCAF1A49}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_EvilSpitPlant" ID="{6BBC6733-D08A-472B-9C02-3B8D9672A68C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Rock" ID="{B66D8734-DBD4-4C96-96EC-6AA0403BD4D9}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_EvilCrawler" ID="{EF0EB965-9767-43A1-8A92-FD7B512AED7C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Stone" ID="{D2A3456D-8E7D-4AEB-80C3-B2A6E501E299}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Crate" ID="{159028AB-63A5-47CC-9085-6D40219022C6}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Barrel" ID="{AE5C53C2-CFB6-4E6A-95E5-251EA71A6D2C}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_Grass" ID="{31F6CCCB-2CBD-482A-806C-14AE43B62EFF}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Pickaxe_EvilHead" ID="{BFC0C6EA-CFC9-4959-B8D4-0A39704C365D}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Leaves" ID="{8E35FB34-435E-48F8-B9D5-F6AD65502952}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Leaves" ID="{13EFEE2A-486C-4E2E-A160-26076A53FF9A}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_SpitPlant" ID="{4B75933B-08F0-47B9-B2B0-EBB03FE691B9}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_EvilSpitPlant" ID="{6BBC6733-D08A-472B-9C02-3B8D9672A68C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Crawler" ID="{9E769E41-1F45-4DE9-B6C6-8426E00CCF40}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_EvilCrawler" ID="{EF0EB965-9767-43A1-8A92-FD7B512AED7C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Stone" ID="{1226965D-F22E-4867-9E70-066A5EDC3DC5}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Stone" ID="{D2A3456D-8E7D-4AEB-80C3-B2A6E501E299}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Rock" ID="{2404E880-6626-472F-9E21-1160F8E96901}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Rock" ID="{B66D8734-DBD4-4C96-96EC-6AA0403BD4D9}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Dirt" ID="{3D4D372E-8DFB-455E-8877-A0D5BCAF1A49}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{6162C3B5-9C24-4648-B3C3-6500BFD194AD}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Wood" ID="{2139F81B-A8BC-49AF-AFE2-7BF423BCA7F4}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Barrel" ID="{F0ACD9E7-41D7-43BE-BC7D-EBBEE983DCBE}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Barrel" ID="{AE5C53C2-CFB6-4E6A-95E5-251EA71A6D2C}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Crate" ID="{174DC4EB-4233-48EF-9100-CE9EB186160C}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Crate" ID="{159028AB-63A5-47CC-9085-6D40219022C6}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Head" ID="{5006A7F5-1D0F-4E79-BD7C-8DEBD4EEB8EA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_EvilHead" ID="{BFC0C6EA-CFC9-4959-B8D4-0A39704C365D}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{56B72CFB-AED8-42DD-9607-AD4807DBE6AA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Pickaxe_Grass" ID="{31F6CCCB-2CBD-482A-806C-14AE43B62EFF}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+										<SwitchContainer Name="Impact_Sword_Surface_Type" ID="{0C1B61CF-6447-4981-AFC8-17B0036162E1}" ShortID="961580132">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+												</Reference>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Surface_Type" ID="{79AB14A4-8CFC-4171-B680-DB132AE53B3A}" WorkUnitID="{3F99A860-AC29-477E-A62F-67440F979384}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<RandomSequenceContainer Name="Impact_Sword_Stone" ID="{011C25A3-BEF5-4150-B79F-663CA57E32EC}" ShortID="119976726">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<SwitchContainer Name="Impact_Sword_Rock" ID="{A4733599-0BA6-4F71-B6EA-FD6A32F039E3}" ShortID="282832245">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+													<GroupingInfo/>
+												</SwitchContainer>
+												<RandomSequenceContainer Name="Impact_Sword_Barrel" ID="{A6900863-E124-46AF-92CC-FC6A8EF165A0}" ShortID="139884938">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_Dirt" ID="{61836731-FFD8-4DCC-B0FD-9806731D2024}" ShortID="345358152">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_EvilHead" ID="{071D635D-3398-425D-9D08-47BAD7EC0BE0}" ShortID="18112289">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_Grass" ID="{A9908F20-3E73-4DD9-A874-B16B35778FAE}" ShortID="434491038">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_Crate" ID="{952EE821-4C29-4210-820C-5E767C8B3810}" ShortID="540161447">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_EvilCrawler" ID="{729233DD-DB19-4833-B084-D625A3F6A832}" ShortID="138152458">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_EvilSpitPlant" ID="{DEC362C2-BFC5-4F9D-9C2E-525F95F8F021}" ShortID="162503176">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_Leaves" ID="{268227A3-D6F7-4645-80A5-9287BD31AC4F}" ShortID="724952844">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Impact_Sword_Wood" ID="{2A839722-E88F-4178-9189-AE4CEBAE5E67}" ShortID="813905340">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+														</Reference>
+													</ReferenceList>
+												</RandomSequenceContainer>
+											</ChildrenList>
+											<GroupingInfo>
+												<GroupingBehaviorList>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Grass" ID="{A9908F20-3E73-4DD9-A874-B16B35778FAE}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Crate" ID="{952EE821-4C29-4210-820C-5E767C8B3810}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Wood" ID="{2A839722-E88F-4178-9189-AE4CEBAE5E67}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Dirt" ID="{61836731-FFD8-4DCC-B0FD-9806731D2024}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_EvilHead" ID="{071D635D-3398-425D-9D08-47BAD7EC0BE0}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Barrel" ID="{A6900863-E124-46AF-92CC-FC6A8EF165A0}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Rock" ID="{A4733599-0BA6-4F71-B6EA-FD6A32F039E3}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Stone" ID="{011C25A3-BEF5-4150-B79F-663CA57E32EC}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_Leaves" ID="{268227A3-D6F7-4645-80A5-9287BD31AC4F}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_EvilSpitPlant" ID="{DEC362C2-BFC5-4F9D-9C2E-525F95F8F021}"/>
+													</GroupingBehavior>
+													<GroupingBehavior>
+														<ItemRef Name="Impact_Sword_EvilCrawler" ID="{729233DD-DB19-4833-B084-D625A3F6A832}"/>
+													</GroupingBehavior>
+												</GroupingBehaviorList>
+												<GroupingList>
+													<Grouping>
+														<SwitchRef Name="Leaves" ID="{8E35FB34-435E-48F8-B9D5-F6AD65502952}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Leaves" ID="{268227A3-D6F7-4645-80A5-9287BD31AC4F}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_SpitPlant" ID="{4B75933B-08F0-47B9-B2B0-EBB03FE691B9}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_EvilSpitPlant" ID="{DEC362C2-BFC5-4F9D-9C2E-525F95F8F021}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Crawler" ID="{9E769E41-1F45-4DE9-B6C6-8426E00CCF40}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_EvilCrawler" ID="{729233DD-DB19-4833-B084-D625A3F6A832}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Stone" ID="{1226965D-F22E-4867-9E70-066A5EDC3DC5}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Stone" ID="{011C25A3-BEF5-4150-B79F-663CA57E32EC}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Rock" ID="{2404E880-6626-472F-9E21-1160F8E96901}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Rock" ID="{A4733599-0BA6-4F71-B6EA-FD6A32F039E3}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Dirt" ID="{7C2C63AF-E3CB-4AA2-9630-19AB8CE10953}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Dirt" ID="{61836731-FFD8-4DCC-B0FD-9806731D2024}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Wood" ID="{6162C3B5-9C24-4648-B3C3-6500BFD194AD}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Wood" ID="{2A839722-E88F-4178-9189-AE4CEBAE5E67}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Barrel" ID="{F0ACD9E7-41D7-43BE-BC7D-EBBEE983DCBE}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Barrel" ID="{A6900863-E124-46AF-92CC-FC6A8EF165A0}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Crate" ID="{174DC4EB-4233-48EF-9100-CE9EB186160C}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Crate" ID="{952EE821-4C29-4210-820C-5E767C8B3810}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Evil_Head" ID="{5006A7F5-1D0F-4E79-BD7C-8DEBD4EEB8EA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_EvilHead" ID="{071D635D-3398-425D-9D08-47BAD7EC0BE0}"/>
+														</ItemList>
+													</Grouping>
+													<Grouping>
+														<SwitchRef Name="Grass" ID="{56B72CFB-AED8-42DD-9607-AD4807DBE6AA}"/>
+														<ItemList>
+															<ItemRef Name="Impact_Sword_Grass" ID="{A9908F20-3E73-4DD9-A874-B16B35778FAE}"/>
+														</ItemList>
+													</Grouping>
+												</GroupingList>
+											</GroupingInfo>
+										</SwitchContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="Impact_Axe_Surface_Type" ID="{911CF22B-4DFF-4AEB-9C03-443671088B11}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Impact_Dagger_Surface_Type" ID="{29E5C276-E538-4FB9-8A8A-85AB77A5EB51}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Impact_Hammer_Surface_Type" ID="{9358E2A3-863E-45A6-823C-893B78EB2695}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Impact_Pickaxe_Surface_Type" ID="{E7440DA9-EC9F-431D-A3AA-B8CBF93DD77A}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Impact_Sword_Surface_Type" ID="{0C1B61CF-6447-4981-AFC8-17B0036162E1}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Sword" ID="{AB792A14-0E8D-4C21-9C57-1C93F4CE3118}"/>
+												<ItemList>
+													<ItemRef Name="Impact_Sword_Surface_Type" ID="{0C1B61CF-6447-4981-AFC8-17B0036162E1}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Hammer" ID="{0C669F17-B3BC-4FF0-AED5-E3AD73A8ED31}"/>
+												<ItemList>
+													<ItemRef Name="Impact_Hammer_Surface_Type" ID="{9358E2A3-863E-45A6-823C-893B78EB2695}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Dagger" ID="{00267B85-5D81-4B43-B8F1-DB750085DA61}"/>
+												<ItemList>
+													<ItemRef Name="Impact_Dagger_Surface_Type" ID="{29E5C276-E538-4FB9-8A8A-85AB77A5EB51}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Axe" ID="{2785E0EB-7B14-4B17-B518-B6305098314F}"/>
+												<ItemList>
+													<ItemRef Name="Impact_Axe_Surface_Type" ID="{911CF22B-4DFF-4AEB-9C03-443671088B11}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Pickaxe" ID="{19C9EAEE-4AEE-4D82-9AD7-D95139C5E6DF}"/>
+												<ItemList>
+													<ItemRef Name="Impact_Pickaxe_Surface_Type" ID="{E7440DA9-EC9F-431D-A3AA-B8CBF93DD77A}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<SwitchContainer Name="Swing_Weapon_Type" ID="{479F4A83-9234-4158-A977-9AB221B9EE65}" ShortID="906214626">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo/>
+								</SwitchContainer>
+								<SwitchContainer Name="Swing_Weapon_Dialogue" ID="{7F3356B2-F3F2-4E4D-94BB-D1E44A3D8CFD}" ShortID="305395806">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{AF9C4DBA-4FBC-4268-BBF0-CD31B59CFF80}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{6707BEBF-B7C9-461C-9FC7-9A03246D7F3E}"/>
+										</Reference>
+									</ReferenceList>
+									<GroupingInfo/>
+								</SwitchContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
